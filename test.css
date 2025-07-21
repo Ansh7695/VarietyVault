@@ -1,0 +1,50 @@
+/* Base styles */
+/* ... */
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    /* Adjust header navigation for mobile */
+    header ul {
+        flex-direction: column;
+    }
+
+    header li {
+        margin-bottom: 10px;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Adjust header navigation for tablets */
+    header ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    header li {
+        margin: 0 15px;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+    /* Add your desktop-specific styles here */
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+body {
+    font-size: 16px;
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}

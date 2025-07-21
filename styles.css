@@ -1,0 +1,96 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+
+}
+/*BACKGROUND IMAGE*/
+body {
+    background-image: url('./Homepage/background.png'); /* Replace 'your-image.jpg' with your image file path */
+    background-size: cover; /* Adjust how the image covers the background */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Fixed background */
+}
+
+
+/* Navbar styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust the alpha value for transparency */
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+/* Transparent button styles */
+.transparent-button {
+    background-color: rgba(0, 0, 0, 0); /* Set the background color to fully transparent */
+    border: 1px solid #f1f0f0; /* Add a border to the button for visibility */
+    border-radius: 10px;
+    color: #e9e5e5; /* Text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer; /* Add a pointer cursor on hover to indicate it's clickable */
+}
+
+/* Style the button on hover (optional) */
+.transparent-button:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Change the background color on hover */
+}
+
+/* Additional styling for the navbar, e.g., text color, links, etc. */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Logo size */
+.navbar .logo img {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Allow the height to adjust automatically to maintain aspect ratio */
+}
+
+/* Navbar links and spacing */
+.navbar .nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links li {
+    margin-right: 20px;
+}
+
+.navbar .nav-links li:last-child {
+    margin-right: 0;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Change link color on hover */
+.navbar .nav-links a:hover {
+    color: #FF5733;
+}
+
+
+   /* Style for the image container and size information */
+   .image-container {
+    text-align: center;
+}
+.image-container {
+    padding-top: 1000px; /* Adjust the padding as needed */
+}

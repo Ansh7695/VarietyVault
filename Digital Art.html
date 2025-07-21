@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Art Gallery</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Digital Art.css">
+</head>
+<body>
+  <div class="nav-bar">
+    <img src="./Homepage/whitelogo.png" alt="logo" class="logo">
+    <nav>
+    <ul class="nav-links">
+        <li><a href="./Homepage.html">Home</a></li>
+        <li class="dropdown"><a href="">Features</a>
+            <ul class="dropdown-content">
+                <li><a href="./song.html">Songs</a></li>
+                <li><a href="">Podcast</a></li>
+                <li><a href="./Digital Art.html">Digital Art</a></li>
+                <li><a href="./webcomics.html">Webcomics</a></li>
+                <li><a href="">More</a></li>
+              </ul>
+            </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="./membership.html">Membership</a></li>
+        <li><a href="help.html">Help</a></li>
+    </ul>
+    </nav>
+</div>
+    <main class="container mx-auto py-8">
+        <!-- Search Bar -->
+        <div class="mb-4">
+            <input type="text" id="search" class="w-full p-2 border rounded" placeholder="Search Artworks">
+        </div>
+        <!-- Artwork Gallery -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- Artwork Cards will be dynamically added here -->
+        </section>
+    </main>
+
+    <!-- Modal for Enlarged Image -->
+    <div id="imageModal" class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-90">
+        <div class="absolute top-0 right-0 p-4">
+            <button id="closeButton" class="text-white text-2xl">&#215;</button>
+        </div>
+        <div class="container mx-auto mt-12">
+            <img id="enlargedImage" class="mx-auto rounded-lg shadow-lg" alt="Enlarged Artwork">
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">VarityVault <i>dolor sit. ipsum dolor sit.</i>ipsum dolor, sit amet consectetur adipisicing elit. Omnis doloremque, sit, necessitatibus laborum aperiam dicta eaque consequatur enim ullam aliquam, rerum dolores accusantium sed. Veritatis tempore voluptates magnam, blanditiis mollitia placeat quasi repellendus officia?</p>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Features</h6>
+              <ul class="footer-links">
+                <li><a href="./song.html">Songs</a></li>
+                <li><a href="#">Podcast</a></li>
+                <li><a href="./Digital Art.html">Digital art</a></li>
+                <li><a href="./webcomics.html">Webcomics</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">More</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Move</h6>
+              <ul class="footer-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="./membership.html">Membership</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="help.html">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+           <a href="#">VarietyVault</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+  </footer>
+    <script src="./Digital Art.js"></script>
+</body>
+</html>
